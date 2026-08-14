@@ -5,284 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026年8月14日(金)｜結城つな新聞</title>
 <style>
-:root { --ink:#102a4c; --blue:#2166c2; --paper:#f7f4ed; --line:#c7cbd1; --muted:#5d6878; }
+:root { --ink:#11233d; --blue:#175fbe; --paper:#edf2f7; --surface:#ffffff; --line:#d9e0e8; --muted:#617086; --green:#00a878; --soft-blue:#edf5ff; }
 * { box-sizing:border-box; }
-body { margin:0; color:var(--ink); background:var(--paper); font-family:"Hiragino Mincho ProN","Yu Mincho",serif; line-height:1.7; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; line-height:1.82; letter-spacing:.015em; }
 a { color:inherit; text-decoration-thickness:1px; text-underline-offset:4px; }
 a:hover { color:var(--blue); }
-.paper { width:min(1120px, calc(100% - 32px)); margin:26px auto 48px; border-top:7px double var(--ink); }
-header { display:grid; grid-template-columns:1fr auto; gap:24px; padding:28px 0 20px; border-bottom:2px solid var(--ink); align-items:end; }
-.meta, .edition, .source, .number { font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
-.meta { font-size:14px; color:var(--muted); }
-h1 { margin:0; font-size:clamp(42px, 8vw, 94px); line-height:1; letter-spacing:.06em; }
-.edition { text-align:right; font-size:13px; color:var(--muted); }
-.tagline { margin:16px 0 28px; font-size:18px; text-align:center; }
-.weather { border-block:1px solid var(--line); padding:12px 0; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; font-size:14px; }
-.weather strong { color:var(--blue); margin-right:12px; }
-.daily-brief { margin-top:28px; padding:24px; background:#fffdf8; border-block:2px solid var(--ink); }
-.daily-brief h2 { margin:0 0 16px; font-size:25px; }
-.daily-brief pre { margin:0; white-space:pre-wrap; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; font-size:15px; line-height:1.9; }
-.layout { display:grid; grid-template-columns:minmax(0, 1fr) 292px; gap:30px; margin-top:30px; }
-.lead { border-bottom:1px solid var(--line); padding-bottom:26px; }
-.lead .number { color:var(--blue); font-weight:700; letter-spacing:.08em; }
-.lead h2 { margin:8px 0 16px; font-size:clamp(30px, 4vw, 52px); line-height:1.3; }
-.lead .source { color:var(--muted); margin:0 0 12px; }
-.lead a { font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; font-weight:700; }
-.article-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:24px; }
-.article-card { border-top:4px solid var(--blue); padding:13px 4px 4px; min-height:220px; }
-.article-card .number { color:var(--blue); font-weight:700; font-size:13px; }
-.article-card h2 { margin:10px 0; font-size:20px; line-height:1.55; }
-.article-card .source { margin:0 0 18px; color:var(--muted); font-size:13px; }
-.article-card a { font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; font-size:14px; font-weight:700; }
-aside { border:1px solid var(--ink); align-self:start; }
-aside h2 { margin:0; padding:12px 16px; background:var(--ink); color:white; font-size:18px; }
-aside p { padding:20px 16px; margin:0; font-size:18px; }
-.links { margin-top:34px; border-top:2px solid var(--ink); padding-top:20px; }
-.links h2 { margin:0 0 12px; font-size:24px; }
-.links ul { list-style:none; padding:0; margin:0; columns:2; column-gap:34px; }
-.links li { break-inside:avoid; padding:10px 0; border-bottom:1px dotted var(--line); }
-.links small { display:block; color:var(--muted); font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
-footer { margin-top:26px; padding-top:12px; border-top:3px double var(--ink); color:var(--muted); font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; font-size:12px; text-align:center; }
-@media (max-width:760px) { .paper { width:min(100% - 24px, 680px); margin-top:12px; } header { grid-template-columns:1fr; } .edition { text-align:left; } .tagline { text-align:left; font-size:15px; } .layout { grid-template-columns:1fr; gap:22px; } .article-grid { grid-template-columns:1fr; } .article-card { min-height:0; } .links ul { columns:1; } }
+a:focus-visible, summary:focus-visible { outline:3px solid var(--green); outline-offset:4px; }
+.skip-link { position:fixed; left:16px; top:-60px; z-index:10; padding:10px 14px; background:var(--ink); color:#fff; font-weight:700; }
+.skip-link:focus { top:16px; }
+.paper { width:min(1440px, calc(100% - 64px)); margin:32px auto 64px; }
+header { display:grid; grid-template-columns:1fr auto; gap:32px; padding:32px 40px 27px; background:var(--surface); border-top:6px solid var(--ink); align-items:end; }
+.meta, .edition, .source, .section-number { font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; }
+.meta { font-size:13px; color:var(--muted); letter-spacing:.08em; }
+h1 { margin:7px 0 0; font-size:clamp(38px, 4.3vw, 64px); line-height:1; letter-spacing:.035em; }
+.edition { text-align:right; font-size:13px; color:var(--muted); line-height:1.7; }
+.tagline { margin:0; padding:17px 40px; background:var(--ink); color:#fff; font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-size:18px; letter-spacing:.04em; }
+.weather { margin-top:24px; padding:17px 22px; background:var(--soft-blue); border-left:4px solid var(--blue); font-size:15px; }
+.weather strong { color:var(--blue); margin-right:14px; }
+.content-grid { display:grid; grid-template-columns:minmax(0, 1fr) 320px; gap:32px; margin-top:24px; align-items:start; }
+.main-column { min-width:0; }
+.brief-intro { padding:30px 34px 29px; background:var(--surface); border-top:3px solid var(--ink); }
+.brief-intro p { margin:0 0 11px; color:var(--blue); font-size:13px; font-weight:700; letter-spacing:.1em; }
+.brief-intro h2 { max-width:850px; margin:0; font-size:clamp(27px, 3vw, 43px); line-height:1.35; letter-spacing:.01em; }
+.brief-intro .source { margin:16px 0 0; font-size:13px; color:var(--muted); }
+.brief-section { display:grid; grid-template-columns:72px minmax(0, 1fr); gap:22px; padding:34px; background:var(--surface); border-top:1px solid var(--line); }
+.brief-section:first-of-type { margin-top:18px; border-top:5px solid var(--blue); }
+.section-number { color:var(--blue); font-size:14px; font-weight:800; letter-spacing:.12em; padding-top:5px; }
+.brief-section h2 { margin:0 0 19px; font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-size:clamp(25px, 2.3vw, 34px); line-height:1.35; }
+.brief-copy { color:#28394f; font-size:16px; }
+.brief-entry { padding:23px 0; border-top:1px solid var(--line); }
+.brief-entry:first-child { padding-top:0; border-top:0; }
+.brief-entry h3 { margin:0 0 15px; color:var(--ink); font-size:20px; line-height:1.55; }
+.brief-entry dl { display:grid; grid-template-columns:1fr; gap:10px; margin:0; }
+.brief-fact { display:grid; grid-template-columns:88px minmax(0, 1fr); gap:14px; align-items:start; }
+.brief-fact dt { color:var(--blue); font-size:13px; font-weight:800; }
+.brief-fact dd { margin:0; font-size:15px; line-height:1.8; }
+.brief-entry p, .brief-note { margin:12px 0 0; font-size:15px; line-height:1.8; }
+.more-stories { margin-top:10px; padding:18px 0 0; border-top:1px solid var(--line); }
+.more-stories summary { color:var(--blue); cursor:pointer; font-size:14px; font-weight:800; }
+.side-rail { display:grid; gap:18px; position:sticky; top:24px; }
+.rail-card { padding:24px; background:var(--surface); border-top:4px solid var(--ink); }
+.rail-card h2 { margin:0 0 13px; font-size:18px; line-height:1.45; }
+.rail-card p { margin:0; font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-size:18px; line-height:1.8; }
+.rail-card small { display:block; margin-top:13px; color:var(--muted); font-size:12px; }
+.links { padding:24px; background:var(--surface); }
+.links h2 { margin:0 0 11px; font-size:18px; }
+.links ul { list-style:none; padding:0; margin:0; }
+.links li { display:grid; grid-template-columns:27px 1fr; column-gap:9px; padding:13px 0; border-top:1px solid var(--line); line-height:1.5; }
+.links li span { color:var(--blue); font-size:12px; font-weight:800; }
+.links a { font-size:14px; font-weight:700; }
+.links b { color:var(--blue); }
+.links small { grid-column:2; display:block; margin-top:4px; color:var(--muted); font-size:12px; }
+footer { margin-top:24px; padding:20px 0; color:var(--muted); font-size:12px; text-align:center; }
+@media (max-width:900px) { .paper { width:min(100% - 32px, 760px); margin-top:16px; } header { padding:27px 24px 22px; grid-template-columns:1fr; gap:14px; } .edition { text-align:left; } .tagline { padding:15px 24px; } .content-grid { grid-template-columns:1fr; gap:20px; } .side-rail { position:static; grid-template-columns:repeat(2, minmax(0, 1fr)); } .links { grid-column:1 / -1; } }
+@media (max-width:600px) { .paper { width:100%; margin:0; } header { border-top-width:4px; } h1 { font-size:37px; } .weather { margin-top:0; } .brief-intro, .brief-section { padding:24px 20px; } .brief-section { grid-template-columns:1fr; gap:8px; } .side-rail { grid-template-columns:1fr; } .brief-copy { font-size:15px; } }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-brief">本文へ移動</a>
 <main class="paper">
 <header>
-<div><div class="meta">2026年8月14日(金)　19:50 発行</div><h1>結城つな新聞</h1></div>
-<div class="edition">AIカンパニーの小さな新聞<br>平日3回 更新</div>
+<div><div class="meta">2026年8月14日(金)　20:15 発行</div><h1>結城つな新聞</h1></div>
+<div class="edition">AIカンパニーの朝のビジネス新聞<br>平日 6:30 更新</div>
 </header>
 <p class="tagline">気になる話を、あとで話せる形に。</p>
 <div class="weather"><strong>きょうの空模様</strong>雨 夜のはじめ頃 くもり 所により 雷を伴い 非常に 激しく 降る　<a href="https://www.jma.go.jp/bosai/forecast/#area_type=offices&amp;area_code=110000" target="_blank" rel="noopener noreferrer">気象庁 ↗</a></div>
-<section class="daily-brief"><h2>Daily Business Brief</h2><pre>## ① トレンドニュース
-
-1. 千葉 大雨被害（NHK）
-   - 何が起きた：千葉で大雨、死者8人、住宅被害は少なくとも178棟と報じられた。
-   - なぜ重要：人的被害・インフラ被害は地域企業の事業継続やサプライチェーンに直結するため、経営リスク管理の観点で優先的に見るべき事象。
-   - 次に見る：被災地域の交通・物流の復旧状況、支援・補助金情報（原典で確認）。
-
-2. 東証大引け：日経平均が4日続伸（日本経済新聞）
-   - 何が起きた：日経平均が4日連続で上昇し、TOPIXも連日高値と報じられた。
-   - なぜ重要：株価の連続上昇は企業の資金調達環境や投資心理に影響する。特に経営企画・新規事業の投資判断に関連。
-   - 次に見る：主要業種別の動きと企業決算や海外市場の動向（原典で確認）。
-
-3. Windowsのライセンス料値上げでPCがさらに高くなる？（Gizmodo）
-   - 何が起きた：Windowsライセンス料の動きがPCコストに与える影響を指摘する記事。
-   - なぜ重要：IT資産のコスト上昇はDX推進や中小企業のIT投資計画に直接影響する。ライセンス戦略の見直しが必要になる可能性がある（見立て）。
-   - 次に見る：マイクロソフト公式発表や企業の調達・サポート方針（原典で確認）。
-
-4. ホルムズ海峡船舶交通、米・イラン対立が抑制（ロイター）
-   - 何が起きた：報道は、13日は9隻がホルムズ海峡を通過したと伝えている。
-   - なぜ重要：海上輸送の安全・安定は原油・物流コストに影響し、企業の調達コストや国際サプライチェーンに波及する。
-   - 次に見る：中東情勢の変化と海運保険料の動向（原典で確認）。
-
-5. アシックスが通期予想を上方修正、初の売上高1兆円台を見込む（fashionsnap）
-   - 何が起きた：アシックスが通期予想を上方修正し、初の売上高1兆円台を見込むと報じられた。
-   - なぜ重要：消費財メーカーの需要回復や価格設定の成功は、流通・小売・サプライヤーへの示唆に。業界の回復トレンド確認に有用。
-   - 次に見る：決算詳細と地域別・チャネル別の業績（原典で確認）。
-
----
-
-## ② 重要ニュース TOP10
-
-1. 千葉 大雨被害（NHK）
-   - 何が起きた：死者8人、住宅被害少なくとも178棟と報じられた。
-   - なぜ重要：地域リスクと事業継続の観点で優先的に監視すべき。
-   - 次に見る：被災地域の復旧計画と補助金・保険の扱い（原典で確認）。
-
-2. 東証大引け：日経平均が4日続伸（日本経済新聞）
-   - 何が起きた：日経平均4日続伸、TOPIX連日高値。
-   - なぜ重要：投資マインドと資金環境を反映。M&amp;Aや資本政策に影響。
-   - 次に見る：決算発表の反応、海外市場との連動（原典で確認）。
-
-3. ホルムズ海峡船舶交通（ロイター）
-   - 何が起きた：13日は9隻通過と報道。
-   - なぜ重要：海上交通の安定は供給網とエネルギーコストに直結。
-   - 次に見る：地域リスクの長期化兆候と海運保険の動向（原典で確認）。
-
-4. Windowsライセンス料値上げの示唆（Gizmodo）
-   - 何が起きた：Windowsのライセンス料値上げでPCコストがさらに増す可能性を指摘。
-   - なぜ重要：ITコスト構造の変化はDXやIT予算に影響。中小企業は特に脆弱（見立て）。
-   - 次に見る：公式発表と主要ITベンダーの対応プラン（原典で確認）。
-
-5. アシックスが通期上方修正（fashionsnap）
-   - 何が起きた：通期予想を上方修正、初の売上高1兆円台を見込む。
-   - なぜ重要：消費動向やブランド経営の成功事例として参考になる。
-   - 次に見る：詳細決算と地域別販売動向（原典で確認）。
-
-6. IBJ、今期経常を15％上方修正・配当6円増額（株探）
-   - 何が起きた：IBJが経常利益見通しを15％上方修正、配当も6円増額と報道。
-   - なぜ重要：業績改善は株主還元や資本政策に影響。業態別の回復状況を示す可能性。
-   - 次に見る：セグメント別業績と今後の配当方針（原典で確認）。
-
-7. 熊本・阿蘇山、火山活動高まる（西日本新聞me）
-   - 何が起きた：火山ガス急増、レベル3引き上げの可能性が報じられた。
-   - なぜ重要：地域リスクとして観光業や地元サプライチェーンに影響。
-   - 次に見る：気象庁・自治体の警戒レベルの正式発表（原典で確認）。
-
-8. 横須賀母港の空母ジョージ・ワシントン、中東に派遣（Yahoo!）
-   - 何が起きた：米空母が中東に派遣される見込みと報道。
-   - なぜ重要：地政学的緊張はエネルギー・保険・物流コストに間接的影響。
-   - 次に見る：米軍・政府の正式発表と派遣期間（原典で確認）。
-
-9. 全国で雨雲急発達、激しい雷雨に注意（ウェザーニュース）
-   - 何が起きた：各地で雨雲が急発達し激しい雷雨が予想されると報じられた。
-   - なぜ重要：短期的な業務停止や交通混乱のリスク管理が必要。
-   - 次に見る：自治体の避難情報と交通機関の運行情報（原典で確認）。
-
-10. 福井の米概算金 1.7万円（日本農業新聞）
-   - 何が起きた：福井県の米の概算金が1.7万円と報じられた。
-   - なぜ重要：農業収入の見通しは地域経済や関連事業（流通・加工）に影響。
-   - 次に見る：全国の水準比較と今後の価格動向（原典で確認）。
-
----
-
-## ③ 市場・今週の予定
-
-- 日経平均：4日続伸（出典：日本経済新聞）
-- ホルムズ海峡：13日は9隻通過（出典：ロイター）
-- 千葉 大雨被害：死者8人、住宅被害少なくとも178棟（出典：NHK）
-- アシックス：通期で売上高1兆円台を見込む（出典：fashionsnap）
-- IBJ：今期経常を15％上方修正、配当6円増額（出典：株探）
-- 福井の米概算金：1.7万円（出典：日本農業新聞）
-- 今週の予定（会合・指標・決算など）：原典で確認
-
-（注）上記は各出典の見出し・要旨に基づく確認済みの数値・日付のみ列挙。詳細な時刻や追加数字は原典で確認してください。
-
----
-
-## ④ 経営インサイト
-
-今日のニュースで実務に直結する示唆は「ITコスト構造の再点検」。Windowsライセンス料やハード高騰の報道は、ハード＋ソフト＋運用の合計コスト（TCO）を押し上げる可能性がある。見立てとして、以下を短期対応案として提示します（見立てと明記）：
-
-- ハード購入前にライセンス含めたTCO試算を必ず行う（短期のコスト上昇を把握）。
-- クラウドサービスやSaaS移行、サブスクリプション再交渉など、ライセンス見直し案を比較検討する。
-- 中小企業はリース・レンタルや端末管理サービスで初期投資圧縮を検討する（見立て）。
-- 経営企画はITコストの変動を想定した感応度分析を実施し、予算策定に反映する。
-
-必要なら、このインサイトを元に「中小企業向けの具体的チェックリスト（10項目）」を作りますか？</pre></section>
-<section class="layout">
-<div>
-<article class="lead"><span class="number">01　きょうの一面</span><h2>【千葉 大雨被害】死者8人に 住宅被害は少なくとも178棟に - NHKニュース</h2><p class="source">出典：記事を開く</p><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WdFFoRVZVbGJ3MnZFaUM4VnlSOHV4RndHVldFTGd1NWNPOEZqVW9sZ2g0cTRvTDhfS0I0d0ZhSFZ2cF9kdS1tZHoxZVFLVUl5blp6d2I5YzJUOE4wZEJB?oc=5" target="_blank" rel="noopener noreferrer">この記事を読む ↗</a></article>
-<section class="article-grid">
-    <article class="article-card">
-      <span class="number">02</span>
-      <h2>千葉の大雨で「水没車」多数 浸水時はエンジン止め放置し避難を 修理には車両保険が適用 - 産経ニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBWZ3BlOE15NTlqVjZmSzBTNlVyYkxIMFBWc3FqT3JlWDlPcXZmVlRWOEtUOGM2NEFsTWdQcjc0VktzS2R2M09TNWVMcF9RUWlzTXlZNXJWaHVqLWZHamRxN3U1Z0VwenhabG1EQzBrdGw0S2VzN3c?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">03</span>
-      <h2>東証大引け 日経平均が4日続伸 米株高支え TOPIXは連日高値 - 日本経済新聞</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1XbmZKUkFDd184Mm5HRGYtanpZdzFwRTZqbVYzUzdEZjBmU2ZVM0hmNXVBaUZ1TW1FcXMzTjkzSm1IeXdTQUlGLS0tNVRnb19mdEpoMklSVHdhWnhWWGdxYkFqNGYwOGx5Y2N0dQ?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">04</span>
-      <h2>秋田県産業労働部職員、知人女性といたホテルからオンライン取材応じ喫煙…停職６か月の懲戒処分・２階級降任 - 読売新聞</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vYUhfN19ibkl1TkFpV0tBWVFHNWN4c2dJa2p1UDAtc1hIT3hnclBXQVNEeHRvUFB3UDlna1VLeW5TVlRsV0g2andscE9neTRMOTA2RnJ1MHhLQUlyWmpWYjRfRXB4Zw?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">05</span>
-      <h2>横須賀母港の米空母ジョージ・ワシントン、中東に派遣 「メンタルヘルス危機」のリンカーンと交代へ - Yahoo!ニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBjYllHTHlCcVQ3ejFaaHJackt5cklRZkhkYUJmXzdyMkFfU1NYODRxWFFid1F5NExUYlJFSC1IclpaRFVqd0FwU0Mwam5jMFh5cWprSkZobVprRnRFdzFyS2tmUnNvM1l5M0d1T3RZSzhGUDVsdlpVUW5PTXJTWUU?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">06</span>
-      <h2>「ファッション保守」元大物政治家 高市首相の靖国参拝見送りに痛烈苦言…過去にも就任後の“トーンダウン”を「やるやる詐欺」と一貫して酷評（女性自身） - Yahoo!ニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBRSWUzWmxZSmh2Q3pzSHNDM2lhaXZWb3ZXRGxYMF9vYm5YUnYyWkJhTEtPZWRjOVZPcTdhVG1idG42bExrX2Vnc2UtQklDR25EaHFqQWtrbm9mZ0xZNWJ3clV6ZUdCZ2tXcmhTUmRPdDlqdFNtaWR5dnIweXI3bnM?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">07</span>
-      <h2>高市首相、物価高対策批判に対しＸに反論５件連続投稿…「ファクトで見てみよう」 - 読売新聞</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYZmgzcGptR3E1b3huQklnR05ycHZsM1JLM2dRRzlzekpna2tUN3R4a0g3M2s5aFQ2enZrOE5nVGIwV1U2SmhYZTJLd29obUUzYTV5VzBYV1g3eEk4c0l4YjRYMk5zUQ?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">08</span>
-      <h2>全国各地で雨雲が急発達 激しい雷雨に要注意 - ウェザーニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9PdS1fODZSWE9QVnVmeWU3NmJMY1JOX21sbXFhVjlGUnU5Smw4Ul83YVVZWDNoMF9ZUDFKOHUxOEdfSXdiemNEMmpXbjNibkhySW4tRA?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">09</span>
-      <h2>福岡県議会「ドン」への辞職勧告決議案を提出へ 金銭授受疑惑 - 毎日新聞</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE51UHBXNy1LdzFxVnEtNU1VMWIyZlI4REtPR21rTWNXZWxCVWI0ZUxZMExKYW1VYXVaNHRFSEZzdnRWcXUzYm80SjV4LWF4WllTTUQxNEpVV3pDRGdMbmZnUUxuOUpvRGFt?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">010</span>
-      <h2>熊本・阿蘇山、火山活動が高まる 火山ガス急増、レベル3引き上げの可能性 - 西日本新聞me</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPZlJ4OU53aFNDYTdzd3hBYUhfbWNOSGZjS21hSV9rd0ptVUNTN1dwb2stYXlZYTk2S0FteWJQMVlWTE1BbnJzZmxBNXIydFBISmdpNHFR?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">011</span>
-      <h2>辺野古沖事故、遺族が同志社に緊急要望書 学校法人の検証「早期の幕引き」懸念 - 産経ニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1EUS1Wa1d4MUpQSXBydUhuRHlPSUZKWENKYWJQa2pyM2k3QjRRbnJUX0IzaS1FNk1kUy1XNHRweWREMXY3aHE4YVNBcWwyY3dlM01LMEhmTUptU3loZEozTE5PSFJ2Rk96OHVualNPa3JHUzNfSVE?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">012</span>
-      <h2>ホルムズ海峡船舶交通、米・イラン対立が抑制 13日は9隻通過 - ロイター</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBqckVCTWZFRGVDSFpFVkVFRnNydHljSG02bGZTLS1VS24xckd1bHN3VzJ4V1FqX0VULTFSdl9QbnMtZ1llSTYyd291QkVnT2FsSzE3M1ZLcHNEQWw3SGc1MXB6Wmx1ajZteGItWjZzN0NtaU9EM2o1VU93?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">013</span>
-      <h2>イスラエル人入植者に住宅包囲されたパレスチナ人に退去命令、ヨルダン川西岸地区 - bbc.com</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JSnZSenBFRnc0ZlpHUE9naUdobmhBU2w0eU5yUEFVV2tQbGY1NFl2NHF2eFZvYnp2VjZLMDRzRF9WU2pDLUNJR21VVzhoOWRwcEZRT2hPRW9nLWFJZjlV0gFkQVVfeXFMT0tOUEwzc0l2N1B2SWtidGpYR1hJMFM5RDdVR1NDNmRxSEFHc0JuWk5sdnBQRlpqa3hqb3F4TE90Q2pSdFBINFhvWkQ3aW0tWmh5QzZEai00UGgyQ2w5MzA0c0ZKSw?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">014</span>
-      <h2>左派候補「大量リード」のち「辛勝」「惜敗」のなぜ 米中間選で世論調査が大はずれ - 産経ニュース</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE10c0JJa092MUswdS1DSEV0QzBMU3JPRllXMWZzMlZoeDhicjRLWHo2VUVhMnBZdWhaVmZkZkFKazBwcFR4Vk54Q2RLSjIyZGRhZUV5aUs2cjJyMmdWdWQ2VUlTZzBPNmhrYXlsbE5qa3RUejRGSXc?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">015</span>
-      <h2>ジェットドローンなどで黒海のロシア軍拠点を攻撃 ゼレンスキー氏「米側に提案」 - news.tv-asahi.co.jp</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5LeDNrMVpXN1h0WUtUQ1hNdHNwMlFXeU9zRU11YWtPajBieVVqS1JRQVRhUXhMZTgtYi1LMXZ2c0NlQXdKOWRLTkdOdWRFWWxZZFJRMWVfMkYyQ0Y3cmNIZG13NWw5bkVuSEthRlIzU0NIa1NqMTJDTGZB?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">016</span>
-      <h2>福井の米概算金１・７万円 ２４年産並み - 日本農業新聞</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBIVzlBWU13Vy1KYWdEQTd5Y25kTjlCRXpVLWJLQk0zUm1ibEhNcmN2WnVJdUdGc2FEZkZtRGxNbkNVQWNXNFdldE5pZExVbmZEZ1MwcndHNA?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">017</span>
-      <h2>アシックスが通期予想を上方修正 初の売上高1兆円台を見込む - fashionsnap.com</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBnTENFeFBDOFBZaUxBbW9zaVZtb2lLYjVTOTdtXzZOd1FOWm5mS1Qxd002TWZ3QVFHT2JldVp1LUpsVWJ3U3dCWm9SVl9xWWNvdE1xR295bzBtckJacDVWTko3LUpRTFNQdDc3bGhB?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">018</span>
-      <h2>ＩＢＪ、今期経常を15％上方修正・最高益予想を上乗せ、配当も6円増額 - 株探</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5uajcxVUhZQURIODdoRHZpUTZhQ1lXU0lZVlVXNWRGdWsxZGF5dzc1ZnJFTWh4WENZNWRsMnZqc0JjWWR6cTBDVF9IZ1ZQSWE3QkE?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">019</span>
-      <h2>折り畳みスマホに流行の兆しも、松本明子のスマホ事情ににしおかすみこ驚愕！松本「8年目に突入しました」 - 文化放送</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1jbXRMZHJBNFRZTHNaSVdpQ1ZlSkZxUzMtYUg1YXViWmZIMTczSk5KZ0tONHhWVkxEWlB5Q3BMNTliMmNqY1EtNzd4VF9INDhjZC1xQ2pn?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article>
-    <article class="article-card">
-      <span class="number">020</span>
-      <h2>ハード高騰だけじゃなかった。Windowsのライセンス料値上げでPCがさらに高くなる？ - Gizmodo</h2>
-      <p class="source">記事を開く</p>
-      <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KZi1MZS1xRjBGNHd5anBkU2NweGJyVUNlUEtKSGFndE1SS3VOczNlUEpTcVZRa2pNOXh0dnpjWHMwVjJKOENOZjc1NnNTcjdfUXFhQ012a0JreWIwdklGeEt6RGg?oc=5" target="_blank" rel="noopener noreferrer">記事を読む <span aria-hidden="true">↗</span></a>
-    </article></section>
+<section class="content-grid" id="main-brief">
+<div class="main-column">
+<section class="brief-intro"><p>DAILY BUSINESS BRIEF</p><h2>今日のビジネスを、先に5分でつかむ。</h2><div class="source">発行時点で確認できた見出しをもとに、結城つなが整理しました。気になる記事は右の出典から原典を読めます。</div></section>
+<section class="brief-section brief-section-1"><div class="section-number">01</div><div class="brief-section-body"><h2>① トレンドニュース</h2><div class="brief-copy"><article class="brief-entry"><h3>1. 日経平均、4日続伸（東証大引け）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>日経平均が4日連続で上昇して取引を終えたと報じられています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>株価の短期的上昇は資金調達・投資判断や企業のマーケット心理に影響します。経営企画や新規事業の投資タイミングに関係します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>午前の寄付き・セクター別の動き、企業決算の続報（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>2. Windowsのライセンス料値上げ報道（Gizmodo）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>Windowsのライセンス料引き上げが取り沙汰され、PCコストがさらに上がる可能性が指摘されています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>PC導入・更新を控える企業ではIT予算、DX／AI推進のコスト試算に直接影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>マイクロソフトの公式発表、企業向けライセンス契約の条件変更（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>3. アップル「折りたたみiPhone」米国先行発売の報道（CNET Japan）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>折りたたみiPhoneが米国で先行発売され、他国は数カ月待ちとの報道。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>デバイス潮流の変化は企業のモバイル戦略、UX設計、ハードウェア調達戦略に影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>発売時期の確定情報と法人向けサポート・価格（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>4. 電通グループ、上期で黒字浮上（株探）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>電通グループが上期で黒字に浮上したと報じられています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>広告・マーケティング需要の回復は事業投資や広告予算の配分に影響します。業界トレンドの先行指標にもなります。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>セグメント別業績、今後のガイダンス（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>5. アシックスが通期予想を上方修正（fashionsnap）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>アシックスが通期予想を上方修正し、売上高の見通しを引き上げたと報じられています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>消費動向やサプライチェーンの安定性を示す指標で、小売・製造業の需給判断に影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>修正理由の詳細と地域別・製品別の寄与（原典で確認）。</dd></div></dl><p>--</p></article></div></div></section><section class="brief-section brief-section-2"><div class="section-number">02</div><div class="brief-section-body"><h2>② 重要ニュース TOP10</h2><div class="brief-copy"><article class="brief-entry"><h3>1. 千葉 大雨被害（NHK）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>千葉で大雨被害が発生したと報じられています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>事業継続（BCP）、サプライチェーン、従業員の安全・通勤に影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>被害状況の詳細、自治体の支援情報（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>2. 千葉の大雨で「水没車」多数（産経）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>浸水で水没車が多発。避難時の注意と修理で車両保険が適用されるとの報道。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>社有車・通勤インフラ、保険コスト、従業員の安全管理に関わります。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>保険適用条件や企業の車両管理方針（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>3. 東証大引け 日経平均が4日続伸（日本経済新聞）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>日経平均が4日連続上昇。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>市場センチメントの改善は資金調達やM&amp;A、投資判断に波及します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>主要業種別の動きと外部要因（原典で確認）。</dd></div></dl></article><details class="more-stories"><summary>残り 7 件を読む</summary><article class="brief-entry"><h3>4. ホルムズ海峡 船舶交通、緊張抑制で13日は9隻通過（ロイター）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>米・イラン対立の抑制が伝えられ、13日は9隻が通過したと報じられています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>海上輸送リスクの変化は原材料調達・物流コストに直結します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>今後の通行実績と保険料動向（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>5. アップル「折りたたみiPhone」米国先行発売（CNET Japan）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>折りたたみiPhoneが米国で先行発売と報じられ、他国は数カ月待ちの見込み。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>企業のモバイル資産管理、アプリ設計、社員向け支給端末の検討材料になります。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>発売スケジュール確定と法人向けサポート（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>6. Windowsライセンス料値上げ示唆（Gizmodo）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>Windowsのライセンス料引き上げ報道で、PCコストの上昇懸念が出ています。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>IT予算、端末更新計画、クラウド移行の費用対効果に影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>マイクロソフト公式発表と企業向け交渉余地（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>7. 電通グループ、上期黒字浮上（株探）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>電通グループが上期で黒字浮上。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>広告投資の流れや消費関連の回復度合いを示す可能性があります。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>広告需要の回復背景と業界への波及（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>8. アシックスが通期予想を上方修正（fashionsnap）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>アシックスが通期見通しを上方修正。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>消費・スポーツ関連需要の強さが示唆され、サプライチェーンの健全性も確認ポイント。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>業績寄与項目と地域別動向（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>9. 横須賀母港の米空母ジョージ・ワシントン、中東派遣（Yahoo!）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>横須賀母港の空母が中東へ派遣される報道。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>地政学リスクが高まるとエネルギー価格や物流リスクに影響します。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>派遣の背景と地域リスク評価（原典で確認）。</dd></div></dl></article><article class="brief-entry"><h3>10. 熊本・阿蘇山、火山活動が高まる（西日本新聞me）</h3><dl><div class="brief-fact"><dt>何が起きた</dt><dd>阿蘇山の火山活動が高まっているとの報道。</dd></div><div class="brief-fact"><dt>なぜ重要</dt><dd>地域の事業活動や観光、物流に影響が出る可能性があります。</dd></div><div class="brief-fact"><dt>次に見る</dt><dd>気象庁・自治体の警戒情報と事業継続計画（原典で確認）。</dd></div></dl><p>--</p></article></details></div></div></section><section class="brief-section brief-section-3"><div class="section-number">03</div><div class="brief-section-body"><h2>③ 市場・今週の予定</h2><div class="brief-copy"><article class="brief-entry"><h3>- 日経平均：4日続伸（出典：東証大引け・日本経済新聞）  </h3><p>ホルムズ海峡：13日は9隻通過（出典：ロイター）  <br>その他の具体的な数値・日付は原典で確認してください。<br>--</p></article></div></div></section><section class="brief-section brief-section-4"><div class="section-number">04</div><div class="brief-section-body"><h2>④ 経営インサイト</h2><div class="brief-copy"><article class="brief-entry"><h3>「端末・ライセンス費用の上昇」はDX／AI投資の見積もりを変える現実的リスクです。見立てとして、ハード＋OSライセンスのコスト上昇が続く場合は、次を検討してください：  </h3><p>クラウドやSaaSでの運用移行による初期投資の平準化（TCO比較を実施）。  <br>重要業務から優先的に仮想化・クラウド化して端末依存を下げる。  <br>ベンダーとのライセンス契約条件の見直し・一括交渉を早める。  <br>短くて実務で使えるアクションに留めました。必要なら、優先度別のチェックリスト（経営企画向け）を作ります。</p></article></div></div></section>
 </div>
-<aside><h2>黒川すすむのひとこと</h2><p>これは冗談なしで、先に予定と移動を見直したい話です。<br>安全がいちばん。急ぐ仕事ほど、まず無事に戻れる段取りからです。</p></aside>
+<aside class="side-rail">
+<section class="rail-card"><h2>黒川すすむのひとこと</h2><p>これは冗談なしで、先に予定と移動を見直したい話です。<br>安全がいちばん。急ぐ仕事ほど、まず無事に戻れる段取りからです。</p><small>ニュースは、まず「自分たちの仕事に何が変わるか」で読む。</small></section>
+<section class="links"><h2>本日の主なニュースリンク</h2><ul><li><span>01</span><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WdFFoRVZVbGJ3MnZFaUM4VnlSOHV4RndHVldFTGd1NWNPOEZqVW9sZ2g0cTRvTDhfS0I0d0ZhSFZ2cF9kdS1tZHoxZVFLVUl5blp6d2I5YzJUOE4wZEJB?oc=5" target="_blank" rel="noopener noreferrer">【千葉 大雨被害】死者8人に 住宅被害は少なくとも178棟に - NHKニュース <b aria-hidden="true">↗</b></a><small>記事を開く</small></li><li><span>02</span><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBWZ3BlOE15NTlqVjZmSzBTNlVyYkxIMFBWc3FqT3JlWDlPcXZmVlRWOEtUOGM2NEFsTWdQcjc0VktzS2R2M09TNWVMcF9RUWlzTXlZNXJWaHVqLWZHamRxN3U1Z0VwenhabG1EQzBrdGw0S2VzN3c?oc=5" target="_blank" rel="noopener noreferrer">千葉の大雨で「水没車」多数 浸水時はエンジン止め放置し避難を 修理には車両保険が適用 - 産経ニュース <b aria-hidden="true">↗</b></a><small>記事を開く</small></li><li><span>03</span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1XbmZKUkFDd184Mm5HRGYtanpZdzFwRTZqbVYzUzdEZjBmU2ZVM0hmNXVBaUZ1TW1FcXMzTjkzSm1IeXdTQUlGLS0tNVRnb19mdEpoMklSVHdhWnhWWGdxYkFqNGYwOGx5Y2N0dQ?oc=5" target="_blank" rel="noopener noreferrer">東証大引け 日経平均が4日続伸 米株高支え TOPIXは連日高値 - 日本経済新聞 <b aria-hidden="true">↗</b></a><small>記事を開く</small></li><li><span>04</span><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vYUhfN19ibkl1TkFpV0tBWVFHNWN4c2dJa2p1UDAtc1hIT3hnclBXQVNEeHRvUFB3UDlna1VLeW5TVlRsV0g2andscE9neTRMOTA2RnJ1MHhLQUlyWmpWYjRfRXB4Zw?oc=5" target="_blank" rel="noopener noreferrer">秋田県産業労働部職員、知人女性といたホテルからオンライン取材応じ喫煙…停職６か月の懲戒処分・２階級降任 - 読売新聞 <b aria-hidden="true">↗</b></a><small>記事を開く</small></li><li><span>05</span><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBjYllHTHlCcVQ3ejFaaHJackt5cklRZkhkYUJmXzdyMkFfU1NYODRxWFFid1F5NExUYlJFSC1IclpaRFVqd0FwU0Mwam5jMFh5cWprSkZobVprRnRFdzFyS2tmUnNvM1l5M0d1T3RZSzhGUDVsdlpVUW5PTXJTWUU?oc=5" target="_blank" rel="noopener noreferrer">横須賀母港の米空母ジョージ・ワシントン、中東に派遣 「メンタルヘルス危機」のリンカーンと交代へ - Yahoo!ニュース <b aria-hidden="true">↗</b></a><small>記事を開く</small></li></ul></section>
+</aside>
 </section>
-<section class="links"><h2>本日の主なニュースリンク</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WdFFoRVZVbGJ3MnZFaUM4VnlSOHV4RndHVldFTGd1NWNPOEZqVW9sZ2g0cTRvTDhfS0I0d0ZhSFZ2cF9kdS1tZHoxZVFLVUl5blp6d2I5YzJUOE4wZEJB?oc=5" target="_blank" rel="noopener noreferrer">【千葉 大雨被害】死者8人に 住宅被害は少なくとも178棟に - NHKニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBWZ3BlOE15NTlqVjZmSzBTNlVyYkxIMFBWc3FqT3JlWDlPcXZmVlRWOEtUOGM2NEFsTWdQcjc0VktzS2R2M09TNWVMcF9RUWlzTXlZNXJWaHVqLWZHamRxN3U1Z0VwenhabG1EQzBrdGw0S2VzN3c?oc=5" target="_blank" rel="noopener noreferrer">千葉の大雨で「水没車」多数 浸水時はエンジン止め放置し避難を 修理には車両保険が適用 - 産経ニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1XbmZKUkFDd184Mm5HRGYtanpZdzFwRTZqbVYzUzdEZjBmU2ZVM0hmNXVBaUZ1TW1FcXMzTjkzSm1IeXdTQUlGLS0tNVRnb19mdEpoMklSVHdhWnhWWGdxYkFqNGYwOGx5Y2N0dQ?oc=5" target="_blank" rel="noopener noreferrer">東証大引け 日経平均が4日続伸 米株高支え TOPIXは連日高値 - 日本経済新聞 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vYUhfN19ibkl1TkFpV0tBWVFHNWN4c2dJa2p1UDAtc1hIT3hnclBXQVNEeHRvUFB3UDlna1VLeW5TVlRsV0g2andscE9neTRMOTA2RnJ1MHhLQUlyWmpWYjRfRXB4Zw?oc=5" target="_blank" rel="noopener noreferrer">秋田県産業労働部職員、知人女性といたホテルからオンライン取材応じ喫煙…停職６か月の懲戒処分・２階級降任 - 読売新聞 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBjYllHTHlCcVQ3ejFaaHJackt5cklRZkhkYUJmXzdyMkFfU1NYODRxWFFid1F5NExUYlJFSC1IclpaRFVqd0FwU0Mwam5jMFh5cWprSkZobVprRnRFdzFyS2tmUnNvM1l5M0d1T3RZSzhGUDVsdlpVUW5PTXJTWUU?oc=5" target="_blank" rel="noopener noreferrer">横須賀母港の米空母ジョージ・ワシントン、中東に派遣 「メンタルヘルス危機」のリンカーンと交代へ - Yahoo!ニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBRSWUzWmxZSmh2Q3pzSHNDM2lhaXZWb3ZXRGxYMF9vYm5YUnYyWkJhTEtPZWRjOVZPcTdhVG1idG42bExrX2Vnc2UtQklDR25EaHFqQWtrbm9mZ0xZNWJ3clV6ZUdCZ2tXcmhTUmRPdDlqdFNtaWR5dnIweXI3bnM?oc=5" target="_blank" rel="noopener noreferrer">「ファッション保守」元大物政治家 高市首相の靖国参拝見送りに痛烈苦言…過去にも就任後の“トーンダウン”を「やるやる詐欺」と一貫して酷評（女性自身） - Yahoo!ニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYZmgzcGptR3E1b3huQklnR05ycHZsM1JLM2dRRzlzekpna2tUN3R4a0g3M2s5aFQ2enZrOE5nVGIwV1U2SmhYZTJLd29obUUzYTV5VzBYV1g3eEk4c0l4YjRYMk5zUQ?oc=5" target="_blank" rel="noopener noreferrer">高市首相、物価高対策批判に対しＸに反論５件連続投稿…「ファクトで見てみよう」 - 読売新聞 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9PdS1fODZSWE9QVnVmeWU3NmJMY1JOX21sbXFhVjlGUnU5Smw4Ul83YVVZWDNoMF9ZUDFKOHUxOEdfSXdiemNEMmpXbjNibkhySW4tRA?oc=5" target="_blank" rel="noopener noreferrer">全国各地で雨雲が急発達 激しい雷雨に要注意 - ウェザーニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE51UHBXNy1LdzFxVnEtNU1VMWIyZlI4REtPR21rTWNXZWxCVWI0ZUxZMExKYW1VYXVaNHRFSEZzdnRWcXUzYm80SjV4LWF4WllTTUQxNEpVV3pDRGdMbmZnUUxuOUpvRGFt?oc=5" target="_blank" rel="noopener noreferrer">福岡県議会「ドン」への辞職勧告決議案を提出へ 金銭授受疑惑 - 毎日新聞 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPZlJ4OU53aFNDYTdzd3hBYUhfbWNOSGZjS21hSV9rd0ptVUNTN1dwb2stYXlZYTk2S0FteWJQMVlWTE1BbnJzZmxBNXIydFBISmdpNHFR?oc=5" target="_blank" rel="noopener noreferrer">熊本・阿蘇山、火山活動が高まる 火山ガス急増、レベル3引き上げの可能性 - 西日本新聞me <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1EUS1Wa1d4MUpQSXBydUhuRHlPSUZKWENKYWJQa2pyM2k3QjRRbnJUX0IzaS1FNk1kUy1XNHRweWREMXY3aHE4YVNBcWwyY3dlM01LMEhmTUptU3loZEozTE5PSFJ2Rk96OHVualNPa3JHUzNfSVE?oc=5" target="_blank" rel="noopener noreferrer">辺野古沖事故、遺族が同志社に緊急要望書 学校法人の検証「早期の幕引き」懸念 - 産経ニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBqckVCTWZFRGVDSFpFVkVFRnNydHljSG02bGZTLS1VS24xckd1bHN3VzJ4V1FqX0VULTFSdl9QbnMtZ1llSTYyd291QkVnT2FsSzE3M1ZLcHNEQWw3SGc1MXB6Wmx1ajZteGItWjZzN0NtaU9EM2o1VU93?oc=5" target="_blank" rel="noopener noreferrer">ホルムズ海峡船舶交通、米・イラン対立が抑制 13日は9隻通過 - ロイター <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JSnZSenBFRnc0ZlpHUE9naUdobmhBU2w0eU5yUEFVV2tQbGY1NFl2NHF2eFZvYnp2VjZLMDRzRF9WU2pDLUNJR21VVzhoOWRwcEZRT2hPRW9nLWFJZjlV0gFkQVVfeXFMT0tOUEwzc0l2N1B2SWtidGpYR1hJMFM5RDdVR1NDNmRxSEFHc0JuWk5sdnBQRlpqa3hqb3F4TE90Q2pSdFBINFhvWkQ3aW0tWmh5QzZEai00UGgyQ2w5MzA0c0ZKSw?oc=5" target="_blank" rel="noopener noreferrer">イスラエル人入植者に住宅包囲されたパレスチナ人に退去命令、ヨルダン川西岸地区 - bbc.com <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE10c0JJa092MUswdS1DSEV0QzBMU3JPRllXMWZzMlZoeDhicjRLWHo2VUVhMnBZdWhaVmZkZkFKazBwcFR4Vk54Q2RLSjIyZGRhZUV5aUs2cjJyMmdWdWQ2VUlTZzBPNmhrYXlsbE5qa3RUejRGSXc?oc=5" target="_blank" rel="noopener noreferrer">左派候補「大量リード」のち「辛勝」「惜敗」のなぜ 米中間選で世論調査が大はずれ - 産経ニュース <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5LeDNrMVpXN1h0WUtUQ1hNdHNwMlFXeU9zRU11YWtPajBieVVqS1JRQVRhUXhMZTgtYi1LMXZ2c0NlQXdKOWRLTkdOdWRFWWxZZFJRMWVfMkYyQ0Y3cmNIZG13NWw5bkVuSEthRlIzU0NIa1NqMTJDTGZB?oc=5" target="_blank" rel="noopener noreferrer">ジェットドローンなどで黒海のロシア軍拠点を攻撃 ゼレンスキー氏「米側に提案」 - news.tv-asahi.co.jp <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBIVzlBWU13Vy1KYWdEQTd5Y25kTjlCRXpVLWJLQk0zUm1ibEhNcmN2WnVJdUdGc2FEZkZtRGxNbkNVQWNXNFdldE5pZExVbmZEZ1MwcndHNA?oc=5" target="_blank" rel="noopener noreferrer">福井の米概算金１・７万円 ２４年産並み - 日本農業新聞 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBnTENFeFBDOFBZaUxBbW9zaVZtb2lLYjVTOTdtXzZOd1FOWm5mS1Qxd002TWZ3QVFHT2JldVp1LUpsVWJ3U3dCWm9SVl9xWWNvdE1xR295bzBtckJacDVWTko3LUpRTFNQdDc3bGhB?oc=5" target="_blank" rel="noopener noreferrer">アシックスが通期予想を上方修正 初の売上高1兆円台を見込む - fashionsnap.com <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5uajcxVUhZQURIODdoRHZpUTZhQ1lXU0lZVlVXNWRGdWsxZGF5dzc1ZnJFTWh4WENZNWRsMnZqc0JjWWR6cTBDVF9IZ1ZQSWE3QkE?oc=5" target="_blank" rel="noopener noreferrer">ＩＢＪ、今期経常を15％上方修正・最高益予想を上乗せ、配当も6円増額 - 株探 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1jbXRMZHJBNFRZTHNaSVdpQ1ZlSkZxUzMtYUg1YXViWmZIMTczSk5KZ0tONHhWVkxEWlB5Q3BMNTliMmNqY1EtNzd4VF9INDhjZC1xQ2pn?oc=5" target="_blank" rel="noopener noreferrer">折り畳みスマホに流行の兆しも、松本明子のスマホ事情ににしおかすみこ驚愕！松本「8年目に突入しました」 - 文化放送 <span aria-hidden="true">↗</span></a><small>記事を開く</small></li><li><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KZi1MZS1xRjBGNHd5anBkU2NweGJyVUNlUEtKSGFndE1SS3VOczNlUEpTcVZRa2pNOXh0dnpjWHMwVjJKOENOZjc1NnNTcjdfUXFhQ012a0JreWIwdklGeEt6RGg?oc=5" target="_blank" rel="noopener noreferrer">ハード高騰だけじゃなかった。Windowsのライセンス料値上げでPCがさらに高くなる？ - Gizmodo <span aria-hidden="true">↗</span></a><small>記事を開く</small></li></ul></section>
 <footer>結城つな新聞　記事の内容は、必ず元の出典で確認してください。</footer>
 </main>
 </body>
